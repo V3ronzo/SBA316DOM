@@ -20,7 +20,7 @@ messageContainer.appendChild(successMessage);
 // Use DocumentFragment or cloneNode for templating
 const fragment = document.createDocumentFragment();
 const templateMessage = document.createElement('p');
-templateMessage.textContent = 'Website/Social Link(s) are required';
+templateMessage.textContent = 'Website/Social Link is required';
 fragment.appendChild(templateMessage.cloneNode(true));
 messageContainer.appendChild(fragment);
 
@@ -49,8 +49,9 @@ form.addEventListener('submit', () => {
   });
 });
 
+const thankYouConfirm = window.confirm('Thank you for submitting!');
 // // Use BOM properties or methods
 // console.log(navigator.userAgent); // BOM property
 // setTimeout(() => {
-//   alert('This is a delayed message.'); // BOM method
+//   alert('Thank You.'); // BOM method
 // }, 5000);
